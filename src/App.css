@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #212;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.8em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.roomlist {
+  background-color: #eee;
+  width: 20%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+}
+
+.roomlist h1 {
+  text-align:left;
+  padding-left: 20%;
+  margin-top:35px;
+}
+
+.roomlist ul {
+  margin-left: -83px;
+  padding-right: 10px;
+  color: ;
+}
+
+.roomlist li {
+  text-align: left;
+  padding-left: 10%;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.roomlist ul div:first-child {
+  width: 100%;
+  padding: 10px;
+  margin-top:35px;
+  margin-bottom: 10px;
+  /*position:absolute;*/
+  top:0;
+  bottom:10px;
+  left:0;
+  right:0;
+  overflow:hidden;
+    margin-left: -43px;
+    color: #68a2ff;
+}
+
+.roomlist ul div:nth-child(2) {
+  width: 100%;
+  padding: 10px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  /*position:absolute;*/
+  top:0;
+  bottom:10px;
+  left:0;
+  right:0;
+  overflow:hidden;
+  margin-left: -43px;
+  color: #68a2ff;
+}
+
+.roomlist ul div:nth-child(3) {
+  width: 100%;
+  padding: 10px;
+  margin-top: 23px;
+  margin-bottom: 30px;
+  /*position:absolute;*/
+  top:0;
+  bottom:10px;
+  left:0;
+  right:0;
+  overflow:hidden;
+  margin-left: -43px;
+  color: #68a2ff;
+}
