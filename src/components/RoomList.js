@@ -29,6 +29,9 @@ class RoomList extends Component {
     });
   }
   createRooms(n) {
+    //Prevent the default. The default behavior of the form, which if we don't will
+    //cause the page to refresh when you hit the submit button.
+    n.preventDefault();
     this.roomsRef.push({
       name: this.state.newRoomName
     });
