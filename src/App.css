@@ -16,6 +16,7 @@
 }
 
 .roomlist {
+  margin-top: -1px;
   background-color: #eee;
   width: 20%;
   position:absolute;
@@ -33,22 +34,39 @@
 }
 
 .roomlist ul {
+  marigin-top: 30px;
   margin-left: -83px;
   padding-right: 10px;
   color: ;
 }
 
 .roomlist li {
+  margin-top: -1px;
   text-align: left;
   padding-left: 10%;
   margin-bottom: 10px;
   list-style-type: none;
 }
 
-.roomlist ul div:first-child {
+.roomlist ul li:first-child {
   width: 100%;
   padding: 10px;
-  margin-top:35px;
+  margin-top: -1px;
+  margin-bottom: 10px;
+  /*position:absolute;*/
+  top:0;
+  bottom: 10px;
+  left:0;
+  right:0;
+  overflow:hidden;
+    margin-left: 50px;
+    color: #68a2ff;
+}
+
+.roomlist ul li {
+  width: 100%;
+  padding: 10px;
+  margin-top: -1px;
   margin-bottom: 10px;
   /*position:absolute;*/
   top:0;
@@ -56,29 +74,28 @@
   left:0;
   right:0;
   overflow:hidden;
-    margin-left: -43px;
-    color: #68a2ff;
+  margin-left: 50px;
+  color: violet;
 }
 
-.roomlist ul div:nth-child(2) {
+.roomlist ul li:nth-child(3) {
   width: 100%;
   padding: 10px;
-  margin-top:20px;
-  margin-bottom: 20px;
+  margin-top: -1 px;
+  margin-bottom: 12px;
   /*position:absolute;*/
   top:0;
   bottom:10px;
   left:0;
   right:0;
   overflow:hidden;
-  margin-left: -43px;
-  color: #68a2ff;
+  margin-left: 50px;
+  color: forestgreen;
 }
-
-.roomlist ul div:nth-child(3) {
+.roomlist ul li:nth-child(4) {
   width: 100%;
   padding: 10px;
-  margin-top: 23px;
+  margin-top: -1px;
   margin-bottom: 30px;
   /*position:absolute;*/
   top:0;
@@ -86,6 +103,6 @@
   left:0;
   right:0;
   overflow:hidden;
-  margin-left: -43px;
-  color: #68a2ff;
+  margin-left: 50px;
+color: #3F8EBF;
 }
