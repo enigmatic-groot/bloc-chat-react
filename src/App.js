@@ -23,8 +23,9 @@ import MessageList from './components/MessageList';
       };
     }
 
-    parentDataReference = (room) => {
-      this.setState({ activeRoom: room });
+    parentDataReference(roomid) {
+      console.log(roomid);
+      this.setState({ activeRoom: roomid });
     }
     render() {
       return (
