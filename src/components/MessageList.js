@@ -34,9 +34,11 @@ class MessageList extends Component {
   }
   createMessages(n) {
     n.preventDefault();
+    console.log(n);
     this.messagesRef.push({
       content: this.state.newMessageText,
       roomID: this.props.activeRoom.key
+      // username: this.props.user.displayName
     });
   }
   handleChange(n) {
@@ -60,7 +62,9 @@ class MessageList extends Component {
             ))}
         </ul>
         {this.props.activeRoom.name === undefined ? (
-          <p>Please specify a chat room to send your message </p>
+          <p id="specifyShadow">
+            Please specify a chat room to send your message{" "}
+          </p>
         ) : (
           <form onSubmit={n => this.createMessages(n)}>
             <input

@@ -19,18 +19,18 @@
   margin-top: -1px;
   background-color: #eee;
   width: 20%;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  overflow:hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }
 
 .roomlist h1 {
-  text-align:left;
+  text-align: left;
   padding-left: 20%;
-  margin-top:35px;
+  margin-top: 35px;
 }
 
 .roomlist ul {
@@ -54,13 +54,13 @@
   margin-top: -1px;
   margin-bottom: 10px;
   /*position:absolute;*/
-  top:0;
+  top: 0;
   bottom: 10px;
-  left:0;
-  right:0;
-  overflow:hidden;
-    margin-left: 50px;
-    color: #68a2ff;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin-left: 50px;
+  color: #68a2ff;
 }
 
 .roomlist ul li {
@@ -69,11 +69,11 @@
   margin-top: -1px;
   margin-bottom: 10px;
   /*position:absolute;*/
-  top:0;
-  bottom:10px;
-  left:0;
-  right:0;
-  overflow:hidden;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   margin-left: 50px;
   color: violet;
 }
@@ -84,11 +84,11 @@
   margin-top: -1 px;
   margin-bottom: 12px;
   /*position:absolute;*/
-  top:0;
-  bottom:10px;
-  left:0;
-  right:0;
-  overflow:hidden;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   margin-left: 50px;
   color: forestgreen;
 }
@@ -98,11 +98,41 @@
   margin-top: -1px;
   margin-bottom: 30px;
   /*position:absolute;*/
-  top:0;
-  bottom:10px;
-  left:0;
-  right:0;
-  overflow:hidden;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   margin-left: 50px;
-color: #3F8EBF;
+  color: #3f8ebf;
 }
+.Users {
+}
+#specifyShadow {
+  font-size: large;
+  /*display: inline-block;*/
+
+  margin-bottom: -120px;
+  margin-right: 190px;
+  margin-left: -320px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  width: 200px;
+  padding: 20px;
+  margin-top: 200px;
+}
+main {
+  font-variant: inherit;
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  width: 200px;
+  padding: 40px;
+}
+#messageMe {
+}
+/*MessageList {
+  font-family: sans-serif;
+  font-style: medium;
+}*/

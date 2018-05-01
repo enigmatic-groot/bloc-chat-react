@@ -3,6 +3,7 @@ import * as firebase from "firebase";
 import "./App.css";
 import RoomList from "./components/RoomList";
 import MessageList from "./components/MessageList";
+import User from "./components/User";
 
 // Initialize Firebase
 var config = {
@@ -19,13 +20,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeRoom: ""
+      activeRoom: "",
+      user: { displayName: "Guest" }
     };
   }
   //Just as you pass objects to setState(), you can also pass functions
   parentDataReference = room => {
     console.log(room);
     this.setState({ activeRoom: room });
+  };
+  setUser = user => {
+    console.log({ user });
+    this.setState({ user: user });
   };
   render() {
     return (
@@ -37,11 +43,18 @@ class App extends Component {
             getRoom={this.parentDataReference}
             activeRoom={this.state.activeRoom}
           />
-          <MessageList
-            firebase={firebase}
-            activeRoom={this.state.activeRoom}
-            user={this.state.user}
-          />
+          <span id="messageMe">
+            <MessageList
+              firebase={firebase}
+              activeRoom={this.state.activeRoom}
+              user={this.state.user}
+            />
+            <User
+              firebase={firebase}
+              setUser={this.setUser}
+              user={this.state.user}
+            />
+          </span>
         </main>
       </div>
     );
