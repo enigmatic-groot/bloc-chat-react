@@ -37,8 +37,8 @@ class MessageList extends Component {
     console.log(n);
     this.messagesRef.push({
       content: this.state.newMessageText,
-      roomID: this.props.activeRoom.key
-      // username: this.props.user.displayName
+      roomID: this.props.activeRoom.key,
+      username: this.props.user.displayName
     });
   }
   handleChange(n) {
